@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        td.top {
+            width: 100%;
+        }
+
+
+        td.bottom-left {
+            width: 25%;
+        }
+
+
+        td.bottom-right {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="top" colspan="2">Верхній блок</td>
+        </tr>
+        <tr>
+            <td class="bottom-left" rowspan="2">Нижній лівий блок (рядок 1)</td>
+            <td class="bottom-right">Нижній правий блок</td>
+        </tr>
+        <tr>
+            <td class="bottom-left">Нижній лівий блок (рядок 2)</td>
+        </tr>
+    </table>
+</body>
+</html>
